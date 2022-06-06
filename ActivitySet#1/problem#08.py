@@ -10,7 +10,7 @@ for line in fh:
   x=line.find("0.")
   numb=line[x:x+6]
   numb=float(numb)
-  count=count+1
+  count+=count
   s=s+numb
 a=s/count
 print("Average spam confidence:",a)
