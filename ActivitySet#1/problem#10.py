@@ -9,13 +9,10 @@ name = "mbox-short.txt"
 name = name.strip()
 fh = open(name)
 counts=dict()
-s=0
 maxval=0
 for line in fh:
     if line.startswith("From "):
         words=line.split()
-    
-        # word=words[1:2]
         word = words[1]
         # print(word)
         if word not in counts:
@@ -27,8 +24,3 @@ for line in fh:
         highest=word
             
 print(word, counts[word])
-            
-#num=list(count.values())
-#maxval=num.max()
-
-
