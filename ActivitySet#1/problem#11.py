@@ -23,6 +23,8 @@ for line in fh:
 
 counts=counts.sort()
 print(counts)
+for value,key in count:
+    print(key,value
 
             
        
