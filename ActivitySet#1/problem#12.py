@@ -8,7 +8,7 @@ import re
 fh=open(assingment.txt)
 for line in fh:
       line=line.strip()
-      x=re.findall('([0-9]*$[735])',line)
+      x=re.findall('([0-9]*)',line)
       x=int(x)
       #print(x)
       sum +=x
