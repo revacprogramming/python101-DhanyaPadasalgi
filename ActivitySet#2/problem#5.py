@@ -1,16 +1,28 @@
 
 
 def get_cs():
-    """get string input"""
+    a=input("enter string")
+    return a
 
-
-def cs_to_dict(cs):
-    """convert connect string to a dictionary"""
-
+def cs_to_dict(c):
+    d=c.split(";")
+    print(c)
+    print(d)
+    di=dict()
+    for i in range(len(d)):
+        x=d[i].split("=")
+        di[(x[0])]=(x[1])
+    return(di)
 
 def dict_to_cs(d):
-    """convert a dictionary to connect string"""
-
+    l = [(k,"=",v,)
+        for k, v in d.items()
+    ]
+    st = ""
+    for i in l:
+        a = "".join(i)
+        st += f"{a};"
+    return st
 
 def main():
     cs = get_cs()
