@@ -1,4 +1,6 @@
 
+
+
 def area(c):
     x1=c[0].x
     x2=c[1].x
@@ -16,6 +18,10 @@ class coordinate():
         self.x=x
         self.y=y
 
+
+def output(c,a):
+    print("area of ",c.split(",")," is ",a)
+
 def main():
     d=list()
     for i in range(3):
@@ -23,6 +29,7 @@ def main():
         y=input("enter y coordinate")
         d[i]=coordinate(x,y)
     a=area(d)
+    output(d,a)
     
 if __name__ == '__main__':
     main()
