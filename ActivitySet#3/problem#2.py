@@ -20,12 +20,12 @@ def entry(n):
     return(c)
 
 def sum(c,n):
-    fn=1
-    fd=0
+    fn=0
+    fd=1
     for i in range(n):
         x=c[i]
-        fn=fn*(x.de)
-        fd=fd+(x.de)
+        fn=fn+(x.de)
+        fd=fd*(x.de)
     ff=fraction(fn,fd)
     return(ff)
     
