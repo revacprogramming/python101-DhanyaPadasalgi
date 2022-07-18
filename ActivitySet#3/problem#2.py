@@ -28,8 +28,6 @@ def sum(c,n):
         x=c[i]
         fn=(fn*x.de)+(1*fd)
         fd=fd*(x.de)
-        # print(fn)
-        # print(fd)
     ff=fraction(fn,fd)
     return(ff)
     
