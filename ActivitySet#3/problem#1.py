@@ -57,14 +57,8 @@ def main():
     print(coord[1].y)
     l=length(coord)
     print(l)
-    # ar=area(lengths)
-    # print(ar)
-    # output(d,a)
-
+    
 def area(A,B,C):
-    # A=l[0]
-    # B=l[1]
-    # C=l[2]
     a=0
     if((math.pow(A,2))>=((math.pow(B,2))+(math.pow(C,2)))):
         a=float((B*C))
@@ -92,12 +86,6 @@ def length(c):
     # print(a,b,c)
     ar=area(a,b,c)
     return(ar)
-
-    # po=(math.pow(x,2))+(math.pow(y,2))
-    # print(po)
-    # sq=math.sqrt(po)
-    # print(sq)
-    # return(sq)
     
 if __name__ == '__main__':
     main()
