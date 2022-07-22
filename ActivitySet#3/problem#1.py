@@ -1,16 +1,4 @@
 
-# def area(c):
-#     x1=c[0].x
-#     x2=c[1].x
-#     x3=c[2].x
-#     y1=c[0].y
-#     y2=c[1].y
-
-#     y3=c[2].y
-
-#     area=abs((x1*(y2-y3))+(x2*(y3-y1))+(x3*(y1-y2)))
-#     return(area)
-
 import math
 class coordinate():
     def __init__(self,x,y):
